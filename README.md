@@ -60,6 +60,17 @@ For users that will belong to a company, ensure to have an existing company and 
 - **Authentication required**: yes
 - **User permission type**: super, admin
 
+If you're a super user inviting an admin user for a company, ensure to specify "admin" for the user_type in the
+request body. When users accept the invitation, they will create an account and automatically be added to the
+specified company in the invitation request.
+
+To test the invitation onboarding, we're doing this manually for now since we don't have a page where a user can set up
+their account. So when an invitation is received;
+1. Copy the token in the link
+2. Go to **/invites/accept_invitation** and add the token as your "token" query parameter
+3. Add your first_name, last_name, password to the body and submit. If request is successful, you can log into
+your account.
+
 #### Payload
 ```python
 {
