@@ -19,7 +19,7 @@
   including the user_type.
   
 **Besides super users, all users must belong to a company. Ensure to create a company
-before inviting (check section 4 for invites) a company user**.
+before inviting (check section 3 for invites) a company user**.
 
 **Only superusers can use "/auth/signup", the rest have to be invited.**
 This endpoint will be removed eventually when we have the initial super user so that no one can access it.
@@ -39,7 +39,7 @@ This endpoint will be removed eventually when we have the initial super user so 
 
 ### 2. Company
 You must be a registered superuser to create a company.
-After creating a company, send an invite to an admin who will manage it
+After creating a company, send an invite to an admin who will manage it (check section 3 for invites)
 - **User permission type**: super
 - **Authentication required**: yes
 
